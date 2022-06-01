@@ -1,0 +1,96 @@
+:root {
+	/* colors */
+	--bg: #fafafa;
+	--border: #dbdbdb;
+	--white: #fff;
+	/* sizes */
+	--wrapper-width: 900px;
+	--wrapper-height: 600px;
+	--section-width: calc(var(--wrapper-width) / 2);
+	--print-width: 13.7rem;
+	/* padding */
+	--padding: 1rem;
+	--padding2: 2rem;
+	--padding3: 3rem;
+	--print-top: 1.275rem;
+	--print-left: 9.875rem;
+}
+
+body {
+	/* color */
+	background-color: var(--bg);
+}
+
+.container {
+	/* flex */
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	/* flex */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding */
+	padding: var(--padding2) 0;
+}
+
+.wrapper {
+	/* padding */
+	margin: 0 var(--padding2);
+	/* size */
+	max-width: var(--wrapper-width);
+	height: var(--wrapper-height);
+	/* flex */
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+}
+
+.wrapper > * {
+	/* flex */
+	flex: 1 var(--section-width);
+}
+
+aside {
+	background-color: red;
+	/* flex */
+	display: flex;
+	/* padding */
+	padding-top: var(--padding3);
+}
+
+aside div {
+	/* padding */
+	flex: 1;
+	/* image */
+	background: url(../img/mockup-iphone-insta.png) center no-repeat;
+	background-size: contain;
+}
+
+aside img {
+	/* size */
+	width: var(--print-width);
+	/* position */
+	position: absolute;
+	/* padding */
+	margin-top: var(--print-top);
+	margin-left: var(--print-left);
+}
+
+article {
+	background-color: blue;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+article section {
+	background-color: var(--width);
+	border: 2px solid var(--border);
+}
+
+article section:nth-of-type(2) {
+	margin: var(--padding) 0px;
+}
