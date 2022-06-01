@@ -4,16 +4,16 @@
 	--border: #dbdbdb;
 	--white: #fff;
 	/* sizes */
-	--wrapper-width: 900px;
+	--wrapper-width: 840px;
 	--wrapper-height: 600px;
 	--section-width: calc(var(--wrapper-width) / 2);
-	--print-width: 13.7rem;
+	--print-width: 13.75rem;
 	/* padding */
 	--padding: 1rem;
 	--padding2: 2rem;
 	--padding3: 3rem;
 	--print-top: 1.275rem;
-	--print-left: 9.875rem;
+	--print-left: 8.9rem;
 }
 
 body {
@@ -24,7 +24,10 @@ body {
 .container {
 	/* flex */
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* size */
+	height: 100vh;
 }
 
 main {
@@ -34,13 +37,18 @@ main {
 	align-items: center;
 	/* padding */
 	padding: var(--padding2) 0;
+	/* size */
+	width: 100%;
+}
+
+.wrapper,
+footer {
+	/* size */
+	max-width: var(--wrapper-width);
 }
 
 .wrapper {
-	/* padding */
-	margin: 0 var(--padding2);
 	/* size */
-	max-width: var(--wrapper-width);
 	height: var(--wrapper-height);
 	/* flex */
 	display: flex;
@@ -50,11 +58,10 @@ main {
 
 .wrapper > * {
 	/* flex */
-	flex: 1 var(--section-width);
+	flex: var(--section-width);
 }
 
 aside {
-	background-color: red;
 	/* flex */
 	display: flex;
 	/* padding */
@@ -80,17 +87,40 @@ aside img {
 }
 
 article {
-	background-color: blue;
+	/* flex */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-article section {
-	background-color: var(--width);
+article > section {
+	/* color */
+	background-color: var(--white);
 	border: 2px solid var(--border);
+	/* flex */
+	display: flex;
 }
 
 article section:nth-of-type(2) {
+	/* padding */
 	margin: var(--padding) 0px;
+}
+
+footer {
+	/* flex */
+	flex: 1;
+	align-self: flex-end;
+	/* padding */
+	padding-bottom: var(--padding2);
+}
+
+@media only screen and (max-width: 860px) {
+	:root {
+		--wrapper-width: 420px;
+		--section-width: var(--wrapper-width);
+	}
+
+	aside {
+		display: none;
+	}
 }
