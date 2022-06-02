@@ -4,9 +4,11 @@
 	--border: #dbdbdb;
 	--white: #fff;
 	/* sizes */
+	--container-height: 100vh;
 	--wrapper-width: 840px;
-	--wrapper-height: 600px;
-	--section-width: calc(var(--wrapper-width) / 2);
+	--main-height: 600px;
+	/* --section-width: calc(var(--wrapper-width) / 2); */
+	--section-width: 420px;
 	--print-width: 13.75rem;
 	/* padding */
 	--padding: 1rem;
@@ -21,27 +23,46 @@ body {
 	background-color: var(--bg);
 }
 
-.container {
-	/* flex */
+.flex {
 	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.wrap {
 	flex-wrap: wrap;
+}
+
+.justify-center {
 	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.container {
 	/* size */
-	height: 100vh;
+	height: var(--container-height);
 }
 
 main {
-	/* flex */
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	/* padding */
 	padding: var(--padding2) 0;
 	/* size */
+	height: var(--main-height);
 	width: 100%;
 }
 
-.wrapper,
+main > * {
+	/* flex */
+	/* flex: var(--section-width); */
+	width: var(--section-width);
+}
+
+/* .wrapper, */
 footer {
 	/* size */
 	max-width: var(--wrapper-width);
@@ -54,11 +75,6 @@ footer {
 	display: flex;
 	flex: 1;
 	flex-wrap: wrap;
-}
-
-.wrapper > * {
-	/* flex */
-	flex: var(--section-width);
 }
 
 aside {
