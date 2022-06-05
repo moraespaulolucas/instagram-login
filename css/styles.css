@@ -1,12 +1,20 @@
 :root {
-	/* colors */
+	/* color palette */
 	--white: #fff;
-	--bgGrey: #fafafa;
-	--borderGrey: #dbdbdb;
-	--fontGrey: #a1a5aa;
+	--black: #262626;
+	--lightGrey: #fafafa;
+	--midGrey: #dbdbdb;
+	--darkGrey: #a1a5aa;
+	/* element colors */
+	--bg-color: var(--lightGrey);
+	--borderColor: var(--midGrey);
+	--fontGrey: var(--darkGrey);
+	--fontBlack: var(--black);
 	--form-button: #0095f6;
 	--form-button-disabled: #b2dffc;
 	/* sizes */
+	--font-size-1: 12px;
+	--font-size-2: 14px;
 	--border-size: 1.25px;
 	--container-height: 100vh;
 	--main-item-height: 600px;
@@ -17,7 +25,7 @@
 	--print-width: 16.1rem;
 	--font-size: 0.75rem;
 	--footer-grow: 1080px;
-	--logo-width: 13rem;
+	--logo-width: 11rem;
 	/* padding */
 	--padding: 1rem;
 	--padding2: 2rem;
@@ -27,36 +35,51 @@
 	--print-left: 7.45rem;
 }
 
-body {
-	background-color: var(--bgGrey);
-	color: var(--fontGrey);
-	font-family: sans-serif;
-	font-size: 0.75rem;
-}
+/* margin top */
 
-.m-dot5 {
-	margin: 0.5rem;
-}
-
-.m-top-dot5 {
+.margin-top-dot5 {
 	margin-top: 0.5rem;
 }
 
-.m-top-dot75 {
+.margin-top-dot75 {
 	margin-top: 0.75rem;
 }
 
-.m-top-1 {
+.margin-top-1 {
 	margin-top: 1rem;
 }
 
-.p-dot5 {
+.margin-top-2 {
+	margin-top: 2rem;
+}
+
+/* padding */
+
+.padding-dot5 {
 	padding: 0.5rem;
 }
 
-.p-1 {
+.padding-1 {
 	padding: 1rem;
 }
+
+.padding-1dot5 {
+	padding: 1.5rem;
+}
+
+.padding-2 {
+	padding: 2rem;
+}
+
+.padding-2dot5 {
+	padding: 2.5rem;
+}
+
+.padding-3 {
+	padding: 3rem;
+}
+
+/* flex */
 
 .flex {
 	display: flex;
@@ -78,33 +101,87 @@ body {
 	align-items: center;
 }
 
-.txt-center {
-	text-align: center;
+.as-center {
+	align-self: center;
 }
 
 .grow {
 	flex: 1;
 }
 
-.w100 {
-	width: 100%;
+/* font */
+
+.txt-center {
+	text-align: center;
 }
+
+.font-size-1 {
+	font-size: var(--font-size-1);
+}
+
+.font-size-2 {
+	font-size: var(--font-size-2);
+}
+
+.font-white {
+	color: var(--white);
+}
+
+.font-grey {
+	color: var(--fontGrey);
+}
+
+.font-darkerGrey {
+	color: var(--borderColor);
+}
+
+.font-black {
+	color: var(--fontBlack);
+}
+
+/* border */
 
 .border-radius {
 	border-radius: 0.25rem;
 }
 
+.border {
+	border: var(--border-size) solid var(--borderColor);
+}
+
+/* background */
+
+.bg-white {
+	background-color: var(--white);
+}
+
+.bg-grey {
+	background-color: var(--bg-color);
+}
+
+/* util */
+
+.width-100 {
+	width: 100%;
+}
+
 .divider {
 	height: 2px;
-	background-color: var(--borderGrey);
+	background-color: var(--borderColor);
 }
 
 .container {
 	min-height: var(--container-height);
+	min-width: 100%;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: red;
 }
 
 main {
-	padding: var(--padding2) 0;
+	/* padding: var(--padding2) 0; */
 }
 
 .main-item {
@@ -136,22 +213,9 @@ article {
 	height: var(--login-box-height);
 }
 
-.border {
-	border: var(--border-size) solid var(--borderGrey);
-}
-
-.bg-white {
-	background-color: var(--white);
-}
-
-.bg-grey {
-	background-color: var(--bgGrey);
-}
-
 .instagram-logo {
 	max-width: var(--logo-width);
-	align-self: center;
-	padding: var(--padding3) 0 var(--padding2);
+	/* padding: var(--padding3) 0 var(--padding2); */
 }
 
 .form-login {
@@ -166,17 +230,12 @@ article {
 
 footer {
 	padding-bottom: var(--padding2);
-	align-self: center;
 	justify-self: flex-end;
 	max-width: var(--footer-grow);
 }
 
 footer a {
 	padding: 0px var(--padding4) var(--padding) var(--padding4);
-}
-
-footer div:nth-of-type(2) {
-	padding-top: var(--padding4);
 }
 
 @media only screen and (max-width: 900px) {

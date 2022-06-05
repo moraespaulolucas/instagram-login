@@ -11,8 +11,8 @@
 
 	<body>
 		<!-- container -->
-		<div class="container flex column font-dot75">
-			<main class="flex jc-center ai-center grow">
+		<div class="container flex column font-size-1 font-grey bg-grey">
+			<main class="flex jc-center ai-center grow margin-top-2">
 				<aside class="flex main-item">
 					<div class="iphone-img"></div>
 					<img
@@ -22,46 +22,56 @@
 					/>
 				</aside>
 				<article class="flex column jc-center main-item">
-					<section class="flex bg-white border column login-box">
-						<div class="instagram-logo">
-							<img class="w100" src="./img/instagram-logo.png" alt="logo" />
+					<section class="flex bg-white ai-center border column padding-2dot5">
+						<div class="instagram-logo as-center margin-top-1">
+							<img
+								class="width-100"
+								src="./img/instagram-logo.png"
+								alt="logo"
+							/>
 						</div>
-						<form class="flex column form-login" action="" method="get">
+						<form class="flex column width-100" action="" method="get">
 							<input
 								type="text"
 								name="email"
-								class="bg-grey border border-radius p-dot5"
+								class="bg-grey border border-radius padding-dot5 margin-top-2"
 							/>
 							<input
 								type="password"
 								name="password"
-								class="bg-grey border border-radius p-dot5 m-top-dot5"
+								class="bg-grey border border-radius padding-dot5 margin-top-dot5"
 							/>
 							<button
 								type="submit"
-								class="form-button border-radius p-dot5 m-top-dot75"
+								class="form-button border-radius padding-dot5 margin-top-dot75 font-size-2"
 							>
 								Enviar
 							</button>
-							<div class="flex ai-center m-top-dot5">
-								<div class="grow divider"></div>
-								<p class="p-dot5">OU</p>
-								<div class="grow divider"></div>
-							</div>
-							<div class="flex m-top-dot5 p-dot5">
-								<p class="txt-center">Entrar com o Facebook</p>
-							</div>
-							<div class="flex p-dot5 m-top-dot5">
-								<p class="txt-center">Esqueceu a senha?</p>
-							</div>
 						</form>
+						<div class="flex width-100 ai-center margin-top-dot5">
+							<div class="grow divider"></div>
+							<p class="padding-dot5 font-size-2">OU</p>
+							<div class="grow divider"></div>
+						</div>
+						<a href="#" class="margin-top-1 font-size-2"
+							>&copy; Entrar com o Facebook</a
+						>
+						<a href="#" class="margin-top-2">Esqueceu a senha?</a>
 					</section>
-					<section class="flex">sign up</section>
-					<section class="flex">download</section>
-					<section class="flex">app store</section>
+					<section
+						class="flex margin-top-dot75 padding-1dot5 jc-center font-black font-size-2 border bg-white"
+					>
+						<p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+					</section>
+					<section
+						class="flex column font-black ai-center font-size-2 margin-top-1"
+					>
+						<p class="margin-top-dot5">Obtenha o aplicativo.</p>
+						<div class="flex margin-top-1">apple android</div>
+					</section>
 				</article>
 			</main>
-			<footer class="flex column">
+			<footer class="flex column margin-top-2">
 				<div class="flex wrap grow jc-center">
 					<a href="#">Meta</a>
 					<a href="#">Sobre</a>
@@ -82,7 +92,7 @@
 					<a href="#">Música</a>
 					<a href="#">Artes visuais</a>
 				</div>
-				<div class="flex jc-center">
+				<div class="flex jc-center margin-top-dot5">
 					<a href="#">Português (Brasil)</a>
 					<a href="#">&copy; 2022 Instagram from Meta</a>
 				</div>
