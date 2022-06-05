@@ -2,6 +2,9 @@
 	/* color palette */
 	--white: #fff;
 	--black: #262626;
+	--blue: #1fb7f9;
+	--opaqueBlue: rgba(31, 183, 249, 0.4);
+	--darkBlue: #385185;
 	--lightGrey: #fafafa;
 	--midGrey: #dbdbdb;
 	--darkGrey: #a1a5aa;
@@ -17,20 +20,15 @@
 	--font-size-2: 14px;
 	--border-size: 1.25px;
 	--container-height: 100vh;
-	--main-item-height: 600px;
-	--aside-width: 26rem;
-	--article-width: 25rem;
-	--login-box-height: 25rem;
-	--wrapper-width: 840px;
-	--print-width: 16.1rem;
-	--font-size: 0.75rem;
-	--footer-grow: 1080px;
+	--aside-basis: 27rem;
+	--article-basis: 23rem;
+	--iphone-image-height: 600px;
+	--iphone-image-width: 100%;
 	--logo-width: 11rem;
-	/* padding */
-	--padding: 1rem;
-	--padding2: 2rem;
-	--padding3: 3rem;
-	--padding4: 0.5rem;
+	--app-link-height: 2.5rem;
+	--footer-links-width: 1080px;
+	/* print img */
+	--print-width: 16.1rem;
 	--print-top: 1.5rem;
 	--print-left: 7.45rem;
 }
@@ -51,6 +49,20 @@
 
 .margin-top-2 {
 	margin-top: 2rem;
+}
+
+.margin-top-3 {
+	margin-top: 3rem;
+}
+
+/* margin full / sides */
+
+.margin-full-dot25 {
+	margin: 0.25rem;
+}
+
+.margin-full-dot5 {
+	margin: 0.5rem;
 }
 
 /* padding */
@@ -139,6 +151,10 @@
 	color: var(--fontBlack);
 }
 
+.font-bold {
+	font-weight: bold;
+}
+
 /* border */
 
 .border-radius {
@@ -165,10 +181,7 @@
 	width: 100%;
 }
 
-.divider {
-	height: 2px;
-	background-color: var(--borderColor);
-}
+/* special */
 
 .container {
 	min-height: var(--container-height);
@@ -177,29 +190,22 @@
 }
 
 body {
-	background-color: red;
-}
-
-main {
-	/* padding: var(--padding2) 0; */
-}
-
-.main-item {
-	height: var(--main-item-height);
+	/* background-color: red; */
 }
 
 aside {
-	flex-basis: var(--aside-width);
+	flex-basis: var(--aside-basis);
 }
 
 article {
-	flex-basis: var(--article-width);
+	flex-basis: var(--article-basis);
 }
 
-.iphone-img {
+.iphone-image {
 	background: url(../img/instagram-iphone.png) left no-repeat;
 	background-size: contain;
-	width: 100%;
+	height: var(--iphone-image-height);
+	width: var(--iphone-image-width);
 }
 
 .instagram-image {
@@ -209,37 +215,49 @@ article {
 	margin-left: var(--print-left);
 }
 
-.login-box {
-	height: var(--login-box-height);
-}
-
 .instagram-logo {
 	max-width: var(--logo-width);
-	/* padding: var(--padding3) 0 var(--padding2); */
 }
 
-.form-login {
-	padding: 0 var(--padding3);
+.divider {
+	height: 2px;
+	background-color: var(--borderColor);
 }
 
-.form-button {
-	background-color: var(--form-button);
-	color: var(--white);
-	font-weight: bold;
+.app-links > img {
+	height: var(--app-link-height);
 }
 
-footer {
-	padding-bottom: var(--padding2);
-	justify-self: flex-end;
-	max-width: var(--footer-grow);
+.enable-button {
+	background-color: var(--blue);
 }
 
-footer a {
-	padding: 0px var(--padding4) var(--padding) var(--padding4);
+.login-box {
+	background-color: var(--white);
+	border: var(--border-size) solid var(--borderColor);
 }
 
-@media only screen and (max-width: 900px) {
+.disable-button {
+	background-color: var(--opaqueBlue);
+}
+
+.footer-links {
+	max-width: var(--footer-links-width);
+}
+
+@media only screen and (max-width: 840px) {
 	aside.main-item {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	main {
+		margin: 0 !important;
+	}
+
+	.login-box {
+		background-color: inherit;
+		border: 0;
 	}
 }

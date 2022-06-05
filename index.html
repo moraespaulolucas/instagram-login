@@ -10,19 +10,18 @@
 	</head>
 
 	<body>
-		<!-- container -->
 		<div class="container flex column font-size-1 font-grey bg-grey">
 			<main class="flex jc-center ai-center grow margin-top-2">
 				<aside class="flex main-item">
-					<div class="iphone-img"></div>
+					<div class="iphone-image"></div>
 					<img
 						class="instagram-image"
 						src="./img/instagram-print.png"
 						alt="Instagram on Iphone"
 					/>
 				</aside>
-				<article class="flex column jc-center main-item">
-					<section class="flex bg-white ai-center border column padding-2dot5">
+				<article class="flex txt-center column main-item">
+					<section class="flex ai-center login-box column padding-2dot5">
 						<div class="instagram-logo as-center margin-top-1">
 							<img
 								class="width-100"
@@ -43,14 +42,14 @@
 							/>
 							<button
 								type="submit"
-								class="form-button border-radius padding-dot5 margin-top-dot75 font-size-2"
+								class="disable-button border-radius padding-dot5 margin-top-dot75 font-bold font-size-2 font-white"
 							>
 								Enviar
 							</button>
 						</form>
 						<div class="flex width-100 ai-center margin-top-dot5">
 							<div class="grow divider"></div>
-							<p class="padding-dot5 font-size-2">OU</p>
+							<p class="padding-dot5 font-size-2 font-bold">OU</p>
 							<div class="grow divider"></div>
 						</div>
 						<a href="#" class="margin-top-1 font-size-2"
@@ -59,7 +58,7 @@
 						<a href="#" class="margin-top-2">Esqueceu a senha?</a>
 					</section>
 					<section
-						class="flex margin-top-dot75 padding-1dot5 jc-center font-black font-size-2 border bg-white"
+						class="flex margin-top-dot75 padding-1dot5 jc-center font-black font-size-2 login-box"
 					>
 						<p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
 					</section>
@@ -67,34 +66,49 @@
 						class="flex column font-black ai-center font-size-2 margin-top-1"
 					>
 						<p class="margin-top-dot5">Obtenha o aplicativo.</p>
-						<div class="flex margin-top-1">apple android</div>
+						<div class="flex wrap jc-center margin-top-1 app-links">
+							<img
+								class="margin-full-dot25"
+								src="./img/app-store.png"
+								alt="App Store"
+							/>
+							<img
+								class="margin-full-dot25"
+								src="./img/play-store.png"
+								alt="Play Store"
+							/>
+						</div>
 					</section>
 				</article>
 			</main>
-			<footer class="flex column margin-top-2">
-				<div class="flex wrap grow jc-center">
-					<a href="#">Meta</a>
-					<a href="#">Sobre</a>
-					<a href="#">Blog</a>
-					<a href="#">Carreiras</a>
-					<a href="#">Ajuda</a>
-					<a href="#">API</a>
-					<a href="#">Privacidade</a>
-					<a href="#">Termos</a>
-					<a href="#">Principais contas</a>
-					<a href="#">Hashtags</a>
-					<a href="#">Localizações</a>
-					<a href="#">Instagram Lite</a>
-					<a href="#">Carregamento de contatos e não usuários</a>
-					<a href="#">Dança</a>
-					<a href="#">Comida e bebida</a>
-					<a href="#">Casa e jardim</a>
-					<a href="#">Música</a>
-					<a href="#">Artes visuais</a>
+			<footer class="flex column margin-top-1 padding-2 ai-center">
+				<div class="flex wrap jc-center footer-links">
+					<a class="margin-full-dot5" href="#">Meta</a>
+					<a class="margin-full-dot5" href="#">Sobre</a>
+					<a class="margin-full-dot5" href="#">Blog</a>
+					<a class="margin-full-dot5" href="#">Carreiras</a>
+					<a class="margin-full-dot5" href="#">Ajuda</a>
+					<a class="margin-full-dot5" href="#">API</a>
+					<a class="margin-full-dot5" href="#">Privacidade</a>
+					<a class="margin-full-dot5" href="#">Termos</a>
+					<a class="margin-full-dot5" href="#">Principais contas</a>
+					<a class="margin-full-dot5" href="#">Hashtags</a>
+					<a class="margin-full-dot5" href="#">Localizações</a>
+					<a class="margin-full-dot5" href="#">Instagram Lite</a>
+					<a class="margin-full-dot5" href="#"
+						>Carregamento de contatos e não usuários</a
+					>
+					<a class="margin-full-dot5" href="#">Dança</a>
+					<a class="margin-full-dot5" href="#">Comida e bebida</a>
+					<a class="margin-full-dot5" href="#">Casa e jardim</a>
+					<a class="margin-full-dot5" href="#">Música</a>
+					<a class="margin-full-dot5" href="#">Artes visuais</a>
 				</div>
-				<div class="flex jc-center margin-top-dot5">
-					<a href="#">Português (Brasil)</a>
-					<a href="#">&copy; 2022 Instagram from Meta</a>
+				<div class="flex jc-center wrap margin-top-dot5">
+					<a class="margin-full-dot5" href="#">Português (Brasil)</a>
+					<a class="margin-full-dot5" href="#"
+						>&copy; 2022 Instagram from Meta</a
+					>
 				</div>
 			</footer>
 		</div>
