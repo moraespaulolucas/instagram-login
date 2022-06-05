@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Instagram</title>
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/styles.css" />
-	</head>
-	<body>
-		<!-- container -->
-		<div class="container flex column">
-			<main class="flex jc-center ai-center grow">
-				<aside class="flex">
-					<div class="grow"></div>
-					<img src="./img/instagram-print.png" alt="Instagram on Iphone" />
-				</aside>
-				<article class="flex column jc-center">
-					<section class="flex"></section>
-					<section class="flex"></section>
-					<section class="flex"></section>
-					<section class="flex"></section>
-				</article>
-			</main>
-			<footer class="flex column">
-				<div class="flex wrap grow jc-center">
-					<a href="#">Meta</a>
-					<a href="#">Sobre</a>
-					<a href="#">Blog</a>
-					<a href="#">Carreiras</a>
-					<a href="#">Ajuda</a>
-					<a href="#">API</a>
-					<a href="#">Privacidade</a>
-					<a href="#">Termos</a>
-					<a href="#">Principais contas</a>
-					<a href="#">Hashtags</a>
-					<a href="#">Localizações</a>
-					<a href="#">Instagram Lite</a>
-					<a href="#">Carregamento de contatos e não usuários</a>
-					<a href="#">Dança</a>
-					<a href="#">Comida e bebida</a>
-					<a href="#">Casa e jardim</a>
-					<a href="#">Música</a>
-					<a href="#">Artes visuais</a>
-				</div>
-				<div class="flex jc-center">
-					<a href="#">Português (Brasil)</a>
-					<a href="#">&copy; Instagram from Meta</a>
-				</div>
-			</footer>
-		</div>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Instagram</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+	<!-- container -->
+	<div class="container flex column font-dot75">
+		<main class="flex jc-center ai-center grow">
+			<aside class="flex main-item">
+				<div class="iphone-img"></div>
+				<img class="instagram-image" src="./img/instagram-print.png" alt="Instagram on Iphone" />
+			</aside>
+			<article class="flex column jc-center main-item">
+				<section class="flex login-box column">
+					<div class="instagram-logo">
+						<img class="w100" src="./img/instagram-logo.png" alt="logo">
+					</div>
+					<form class="flex column form-login" action="" method="get">
+						<input type="text" name="email" class="input-box border-radius">
+						<input type="password" name="password" class="input-box border-radius">
+						<button type="submit" class="form-button border-radius p-dot-5">Enviar</button>
+						<div>OU</div>
+						<p>Entrar com o Facebook</p>
+						<p>Esqueceu a senha?</p>
+					</form>
+				</section>
+				<section class="flex login-box">sign up</section>
+				<section class="flex">download</section>
+				<section class="flex">app store</section>
+			</article>
+		</main>
+		<footer class="flex column">
+			<div class="flex wrap grow jc-center">
+				<a href="#">Meta</a>
+				<a href="#">Sobre</a>
+				<a href="#">Blog</a>
+				<a href="#">Carreiras</a>
+				<a href="#">Ajuda</a>
+				<a href="#">API</a>
+				<a href="#">Privacidade</a>
+				<a href="#">Termos</a>
+				<a href="#">Principais contas</a>
+				<a href="#">Hashtags</a>
+				<a href="#">Localizações</a>
+				<a href="#">Instagram Lite</a>
+				<a href="#">Carregamento de contatos e não usuários</a>
+				<a href="#">Dança</a>
+				<a href="#">Comida e bebida</a>
+				<a href="#">Casa e jardim</a>
+				<a href="#">Música</a>
+				<a href="#">Artes visuais</a>
+			</div>
+			<div class="flex jc-center">
+				<a href="#">Português (Brasil)</a>
+				<a href="#">&copy; 2022 Instagram from Meta</a>
+			</div>
+		</footer>
+	</div>
+</body>
+
 </html>

@@ -4,28 +4,36 @@
 	--border: #dbdbdb;
 	--font: #a1a5aa;
 	--white: #fff;
+	--form-button: #0095F6;
+	--form-button-disabled: #B2DFFC;
 	/* sizes */
 	--container-height: 100vh;
 	--main-item-height: 600px;
-	--main-item-width: 420px;
+	--aside-width: 25rem;
+	--article-width: 25rem;
 	--wrapper-width: 840px;
-	--print-width: 13.75rem;
+	--print-width: 14.7rem;
 	--font-size: 0.75rem;
 	--footer-grow: 1080px;
+	--logo-width: 13rem;
 	/* padding */
 	--padding: 1rem;
 	--padding2: 2rem;
 	--padding3: 3rem;
 	--padding4: 0.5rem;
-	--print-top: 1.275rem;
-	--print-left: 8.9rem;
+	--print-top: 4.45rem;
+	--print-left: 6.9rem;
 }
 
 body {
 	background-color: var(--bg);
 	color: var(--font);
 	font-family: sans-serif;
-	font-size: --font-=size;
+	font-size: 0.75rem;
+}
+
+.p-dot-5 {
+	padding: 0.5rem;
 }
 
 .flex {
@@ -52,8 +60,12 @@ body {
 	flex: 1;
 }
 
-.wrapper {
-	width: var(--wrapper-width);
+.w100 {
+	width: 100%;
+}
+
+.border-radius {
+	border-radius: 0.25rem;
 }
 
 .container {
@@ -64,34 +76,68 @@ main {
 	padding: var(--padding2) 0;
 }
 
-main > * {
+.main-item {
 	height: var(--main-item-height);
-	flex: 0 var(--main-item-width);
 }
 
 aside {
-	padding-top: var(--padding3);
+	flex-basis: var(--aside-width);
 }
 
-aside div {
-	background: url(../img/mockup-iphone-insta.png) center no-repeat;
+article {
+	flex-basis: var(--article-width);
+}
+
+.iphone-img {
+	margin-top: var(--padding3);
+	background: url(../img/instagram-iphone.png) left no-repeat;
 	background-size: contain;
+	width: 100%;
 }
 
-aside img {
+.instagram-image {
 	width: var(--print-width);
 	position: absolute;
 	margin-top: var(--print-top);
 	margin-left: var(--print-left);
 }
 
-article > section {
+.login-box {
 	background-color: var(--white);
 	border: 2px solid var(--border);
 }
 
-article section:nth-of-type(2) {
+article .login-box:nth-of-type(2) {
 	margin: var(--padding4) 0px;
+}
+
+.instagram-logo {
+	max-width: var(--logo-width);
+	align-self: center;
+	padding: var(--padding3) 0 var(--padding2);
+}
+
+.form-login {
+	padding: 0 var(--padding3);
+}
+
+.form-login > * {
+	padding: var(--padding4);
+}
+
+.input-box {
+	background-color: var(--bg);
+	border: 2px solid var(--border);
+}
+
+.form-login * + *{
+	margin-top: var(--padding4);
+}
+
+.form-button {
+	background-color: var(--form-button);
+	color: var(--white);
+	font-weight: bold;
 }
 
 footer {
@@ -115,7 +161,7 @@ footer div:nth-of-type(2) {
 		--main-item-width: var(--wrapper-width); */
 	}
 
-	aside {
-		/* display: none; */
+	aside.main-item {
+		display: none;
 	}
 }
