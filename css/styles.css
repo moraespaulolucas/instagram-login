@@ -12,14 +12,11 @@
 	--bg-color: var(--lightGrey);
 	--borderColor: var(--midGrey);
 	--fontGrey: var(--darkGrey);
-	--fontBlack: var(--black);
-	--form-button: #0095f6;
-	--form-button-disabled: #b2dffc;
+	--fontWhite: var(--white);
 	/* sizes */
 	--font-size-1: 12px;
 	--font-size-2: 14px;
 	--border-size: 1.25px;
-	--container-height: 100vh;
 	--aside-basis: 27rem;
 	--article-basis: 23rem;
 	--iphone-image-height: 600px;
@@ -45,6 +42,10 @@
 
 .margin-top-1 {
 	margin-top: 1rem;
+}
+
+.margin-top-1dot5 {
+	margin-top: 1.5rem;
 }
 
 .margin-top-2 {
@@ -148,7 +149,7 @@
 }
 
 .font-black {
-	color: var(--fontBlack);
+	color: var(--black);
 }
 
 .font-bold {
@@ -184,13 +185,12 @@
 /* special */
 
 .container {
-	min-height: var(--container-height);
+	min-height: 100vh;
 	min-width: 100%;
-	font-family: sans-serif;
 }
 
 body {
-	/* background-color: red; */
+	background-color: red;
 }
 
 aside {
@@ -225,11 +225,16 @@ article {
 }
 
 .app-links > img {
-	height: var(--app-link-height);
+	max-height: var(--app-link-height);
+	max-width: 100%;
 }
 
 .enable-button {
 	background-color: var(--blue);
+}
+
+.disable-button {
+	background-color: var(--opaqueBlue);
 }
 
 .login-box {
@@ -237,8 +242,8 @@ article {
 	border: var(--border-size) solid var(--borderColor);
 }
 
-.disable-button {
-	background-color: var(--opaqueBlue);
+footer a {
+	padding: 0rem 0.5rem 1rem;
 }
 
 .footer-links {
