@@ -11,11 +11,12 @@
 	/* sizes */
 	--font-size-1: 12px;
 	--font-size-2: 14px;
+	--font-size-3: 10px;
 	--border-size: 1.25px;
 	--aside-basis: 27rem;
 	--article-basis: 23rem;
-	--iphone-image-height: 600px;
-	--iphone-image-width: 100%;
+	--iphone-img-height: 600px;
+	--iphone-img-width: 100%;
 	--logo-width: 11rem;
 	--app-link-height: 2.5rem;
 	--footer-links-width: 1080px;
@@ -47,14 +48,14 @@
 	margin-top: 2rem;
 }
 
+.margin-top-3 {
+	margin-top: 3rem;
+}
+
 /* margin full / sides */
 
 .margin-full-dot25 {
 	margin: 0.25rem;
-}
-
-.margin-full-dot5 {
-	margin: 0.5rem;
 }
 
 /* padding */
@@ -77,10 +78,6 @@
 
 .padding-2dot5 {
 	padding: 2.5rem;
-}
-
-.padding-3 {
-	padding: 3rem;
 }
 
 /* flex */
@@ -195,22 +192,22 @@ body {
 	background-color: red;
 }
 
-aside {
+.img-side {
 	flex-basis: var(--aside-basis);
 }
 
-article {
+.login-side {
 	flex-basis: var(--article-basis);
 }
 
-.iphone-image {
+.iphone-img {
 	background: url(../img/instagram-iphone.png) left no-repeat;
 	background-size: contain;
-	height: var(--iphone-image-height);
-	width: var(--iphone-image-width);
+	height: var(--iphone-img-height);
+	width: var(--iphone-img-width);
 }
 
-.instagram-image {
+.instagram-print {
 	width: var(--print-width);
 	position: absolute;
 	margin-top: var(--print-top);
@@ -227,7 +224,7 @@ article {
 }
 
 input:focus::placeholder {
-	font-size: 0.5rem;
+	font-size: var(--font-size-3);
 }
 
 .app-links > img {
@@ -243,11 +240,6 @@ input:focus::placeholder {
 	background-color: var(--opaqueBlue);
 }
 
-.login-box {
-	background-color: var(--white);
-	border: var(--border-size) solid var(--midGrey);
-}
-
 footer a {
 	padding: 0rem 0.5rem 1rem;
 }
@@ -257,7 +249,7 @@ footer a {
 }
 
 @media only screen and (max-width: 840px) {
-	aside.main-item {
+	.img-side {
 		display: none;
 	}
 }
