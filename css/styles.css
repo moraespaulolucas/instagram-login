@@ -1,5 +1,5 @@
 :root {
-	/* color palette */
+	/* colors */
 	--white: #fff;
 	--black: #262626;
 	--blue: #1fb7f9;
@@ -8,11 +8,6 @@
 	--lightGrey: #fafafa;
 	--midGrey: #dbdbdb;
 	--darkGrey: #a1a5aa;
-	/* element colors */
-	--bg-color: var(--lightGrey);
-	--borderColor: var(--midGrey);
-	--fontGrey: var(--darkGrey);
-	--fontWhite: var(--white);
 	/* sizes */
 	--font-size-1: 12px;
 	--font-size-2: 14px;
@@ -50,10 +45,6 @@
 
 .margin-top-2 {
 	margin-top: 2rem;
-}
-
-.margin-top-3 {
-	margin-top: 3rem;
 }
 
 /* margin full / sides */
@@ -140,16 +131,28 @@
 	color: var(--white);
 }
 
-.font-grey {
-	color: var(--fontGrey);
+.font-darkGrey {
+	color: var(--darkGrey);
 }
 
-.font-darkerGrey {
-	color: var(--borderColor);
+.font-midGrey {
+	color: var(--midGrey);
+}
+
+.font-lightGrey {
+	color: var(--lightGrey);
 }
 
 .font-black {
 	color: var(--black);
+}
+
+.font-blue {
+	color: var(--blue);
+}
+
+.font-darkBlue {
+	color: var(--darkBlue);
 }
 
 .font-bold {
@@ -163,7 +166,7 @@
 }
 
 .border {
-	border: var(--border-size) solid var(--borderColor);
+	border: var(--border-size) solid var(--midGrey);
 }
 
 /* background */
@@ -173,7 +176,7 @@
 }
 
 .bg-grey {
-	background-color: var(--bg-color);
+	background-color: var(--lightGrey);
 }
 
 /* util */
@@ -186,7 +189,6 @@
 
 .container {
 	min-height: 100vh;
-	min-width: 100%;
 }
 
 body {
@@ -220,8 +222,12 @@ article {
 }
 
 .divider {
-	height: 2px;
-	background-color: var(--borderColor);
+	height: 1px;
+	background-color: var(--midGrey);
+}
+
+input:focus::placeholder {
+	font-size: 0.5rem;
 }
 
 .app-links > img {
@@ -239,7 +245,7 @@ article {
 
 .login-box {
 	background-color: var(--white);
-	border: var(--border-size) solid var(--borderColor);
+	border: var(--border-size) solid var(--midGrey);
 }
 
 footer a {
