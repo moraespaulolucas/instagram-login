@@ -8,89 +8,91 @@
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
-
 	<body>
-		<div class="container flex column font-size-1 font-darkGrey bg-grey">
+		<!-- site container -->
+		<div class="container flex-column font-darkGrey bg-grey">
+			<!-- main content container -->
 			<main class="flex jc-center ai-center grow margin-top-2">
-				<aside class="img-side flex">
+				<!-- phone img container -->
+				<aside class="flex img-side">
+					<!-- phone mocha -->
 					<div class="iphone-img"></div>
-					<img
-						class="instagram-print"
-						src="./img/instagram-print.png"
-						alt="Instagram on Iphone"
-					/>
+					<!-- print of instagram feed -->
+					<img class="instagram-print" src="./img/instagram-print.png" alt="Instagram on Iphone" />
 				</aside>
-				<article class="login-side flex column txt-center">
-					<section class="flex column bg-white border">
+				<!-- login container -->
+				<article class="login-side flex-column txt-center">
+					<!-- login form section -->
+					<section class="flex-column bg-white border">
+						<!-- instagram logo -->
 						<div class="instagram-logo as-center margin-top-3">
-							<img
-								class="width-100"
-								src="./img/instagram-logo.png"
-								alt="logo"
-							/>
+							<img class="width-100" src="./img/instagram-logo.png" alt="logo" />
 						</div>
-						<div class="flex column padding-2dot5">
-							<form class="flex column" action="" method="get">
+						<!-- login form -->
+						<div class="flex-column padding-2dot5">
+							<form class="flex-column" action="" method="get">
 								<input
 									type="text"
-									name="email"
+									id="email"
 									class="bg-grey border border-radius padding-dot5"
-									placeholder="Telefone, nome de usuário ou email"
-								/>
+									placeholder="Telefone, nome de usuário ou email" />
 								<input
 									type="password"
-									name="password"
+									id="password"
 									class="bg-grey border border-radius padding-dot5 margin-top-dot5"
-									placeholder="Senha"
-								/>
+									placeholder="Senha" />
 								<button
 									type="submit"
-									class="border-radius padding-dot5 margin-top-dot75 font-bold font-size-2 font-white"
-								>
+									class="enabled-btn border-radius padding-dot5 margin-top-dot75 font-bold bigger-font font-white"
+									id="form_btn">
 									Enviar
 								</button>
 							</form>
 							<div class="flex ai-center margin-top-dot5">
+								<!-- divider -->
 								<div class="grow divider"></div>
-								<p class="padding-1 font-size-2 font-bold">OU</p>
+								<p class="padding-1 bigger-font font-bold">OU</p>
+								<!-- divider -->
 								<div class="grow divider"></div>
 							</div>
-							<a
-								href="#"
-								class="font-darkBlue font-bold margin-top-1 font-size-2"
+							<a href="#" class="font-darkBlue font-bold margin-top-1 bigger-font"
 								>&copy; Entrar com o Facebook</a
 							>
 							<a href="#" class="font-black margin-top-2">Esqueceu a senha?</a>
 						</div>
 					</section>
-					<section
-						class="flex bg-white border margin-top-dot75 padding-1dot5 jc-center"
-					>
-						<p class="font-size-2 font-black">
+					<!-- sign up section -->
+					<section class="flex bg-white border margin-top-dot75 padding-1dot5 jc-center">
+						<p class="bigger-font font-black">
 							Não tem uma conta?
 							<a class="font-blue font-bold" href="#">Cadastre-se</a>
 						</p>
 					</section>
-					<section
-						class="flex column font-black ai-center font-size-2 margin-top-1"
-					>
+					<!-- app store link section -->
+					<section class="flex-column font-black ai-center bigger-font margin-top-1">
 						<p class="margin-top-dot5">Obtenha o aplicativo.</p>
 						<div class="flex wrap jc-center margin-top-1 app-links">
-							<img
-								class="margin-full-dot25"
-								src="./img/app-store.png"
-								alt="App Store"
-							/>
-							<img
-								class="margin-full-dot25"
-								src="./img/play-store.png"
-								alt="Play Store"
-							/>
+							<!-- app store link -->
+							<a
+								href="https://apps.apple.com/br/app/instagram/id389801252"
+								target="_blank"
+								class="margin-full-dot25">
+								<img src="./img/app-store.png" alt="App Store" />
+							</a>
+							<!-- play store link -->
+							<a
+								href="https://play.google.com/store/apps/details?id=com.instagram.android"
+								target="_blank"
+								class="margin-full-dot25">
+								<img src="./img/play-store.png" alt="Play Store" />
+							</a>
 						</div>
 					</section>
 				</article>
 			</main>
-			<footer class="flex column margin-top-3 padding-1 ai-center">
+			<!-- footer container -->
+			<footer class="flex-column margin-top-3 padding-1 ai-center">
+				<!-- links list -->
 				<div class="flex wrap jc-center footer-links">
 					<a href="#">Meta</a>
 					<a href="#">Sobre</a>
@@ -111,12 +113,14 @@
 					<a href="#">Música</a>
 					<a href="#">Artes visuais</a>
 				</div>
+				<!-- language and copyrights  -->
 				<div class="flex jc-center wrap margin-top-dot5">
 					<a href="#">Português (Brasil)</a>
 					<a href="#">&copy; 2022 Instagram from Meta</a>
 				</div>
 			</footer>
-			<div class="margin-top-2"></div>
+
+			<!-- <div class="margin-top-2"></div> -->
 		</div>
 	</body>
 </html>
